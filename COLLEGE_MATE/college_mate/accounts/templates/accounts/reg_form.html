@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Registration</title>
+{% endblock %}
+{% block body %}
+
+<div class="container"><h1>REGISTER:</h1><br>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+<button class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Submits the form" type="submit">PEACE OUT</button>
+</form>
+
+</div>
+{% endblock %}
